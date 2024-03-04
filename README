@@ -1,0 +1,23 @@
+# PlayFair Encryption and Decryption Algorithm in C#
+
+This repository contains a C# implementation of the PlayFair encryption and decryption algorithm.
+
+## Introduction
+
+PlayFair is a classical symmetric encryption technique that operates on pairs of letters, instead of single letters as in the case of simple substitution ciphers. It was used extensively in the past due to its simplicity and relative strength compared to other methods of encryption available at the time.
+
+## Implementation
+
+The implementation in this repository provides both encryption and decryption functionalities using the PlayFair algorithm. The main components include:
+
+- `PlayFairEncryptor.cs`: Contains the implementation for encrypting plaintext using the PlayFair algorithm.
+- `PlayFairDecryptor.cs`: Contains the implementation for decrypting ciphertext encrypted using the PlayFair algorithm.
+- `PlayFairMatrix.cs`: Helper class to generate the PlayFair matrix and perform operations related to it.
+- `Program.cs`: Contains a simple console application to demonstrate how to use the encryption and decryption functionalities.
+
+## Usage
+
+To use the encryption and decryption functionalities provided by this implementation:
+
+1. Clone this repository to your local machine.
+2. Open the solution in your preferred C# IDE.
