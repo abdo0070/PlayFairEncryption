@@ -12,3 +12,4 @@ C:\Users\Abdalla\source\repos\DataSecurity\DataSecurity\obj\Debug\net8.0\refint\
 C:\Users\Abdalla\source\repos\DataSecurity\DataSecurity\obj\Debug\net8.0\DataSecurity.pdb
 C:\Users\Abdalla\source\repos\DataSecurity\DataSecurity\obj\Debug\net8.0\DataSecurity.genruntimeconfig.cache
 C:\Users\Abdalla\source\repos\DataSecurity\DataSecurity\obj\Debug\net8.0\ref\DataSecurity.dll
+C:\Users\Abdalla\source\repos\DataSecurity\DataSecurity\obj\Debug\net8.0\DataSecurity.sourcelink.json

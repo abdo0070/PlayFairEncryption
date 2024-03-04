@@ -9,16 +9,17 @@ class PlayFair
 {
     public static void Main(String[] args)
     {
-        Console.WriteLine(Encrybt("communication", "playfairexample"));
+        Console.WriteLine(Encrypt("System", "balloon"));
     }
 
-    public static string Encrybt(string planText, string key)
+    public static string Encrypt(string planText, string key)
     {
+        
+        StringBuilder encryptedText = new StringBuilder();
         planText = planText.ToUpper();
         char[,] matrix = ConsturctTheMatrix(key);
-        char [] plainTextArray = PlainTextToArray(planText);
-        StringBuilder encryptedText = new StringBuilder();
-        // Main Decrypt Algorithm
+        char[] plainTextArray = PlainTextToArray(planText);
+        // Main Eecrypt Algorithm
         for (int i = 0; i < plainTextArray.Length;)
         {
             if (SameColumn(matrix, plainTextArray[i], plainTextArray[i+1]))
@@ -52,6 +53,50 @@ class PlayFair
         }
        
         return encryptedText.ToString();
+    }
+
+    public static string Decrypt(string cipherText,string key)
+    {
+        StringBuilder decryptedText = new StringBuilder();
+        cipherText = cipherText.ToUpper();
+        char[,] matrix = ConsturctTheMatrix(key);
+        char[] cipherTextArray = PlainTextToArray(cipherText);
+
+        // Main Eecrypt Algorithm
+        for (int i = 0; i < cipherTextArray.Length;)
+        {
+            if (SameColumn(matrix, cipherTextArray[i], cipherTextArray[i + 1]))
+            {
+                int row = (getCurpos(matrix, cipherTextArray[i], true) + 4) % 5;
+                int col = getCurpos(matrix, cipherTextArray[i], false);
+                decryptedText.Append(matrix[row, col]);
+                row = (getCurpos(matrix, cipherTextArray[i + 1], true) + 4) % 5;
+                col = getCurpos(matrix, cipherTextArray[i + 1], false);
+                decryptedText.Append(matrix[row, col]);
+            }
+            else if (SameRow(matrix, cipherTextArray[i], cipherTextArray[i + 1]))
+            {
+                int row = getCurpos(matrix, cipherTextArray[i], true);
+                int col = (getCurpos(matrix, cipherTextArray[i], false) + 4) % 5;
+                decryptedText.Append(matrix[row, col]);
+                row = getCurpos(matrix, cipherTextArray[i + 1], true);
+                col = (getCurpos(matrix, cipherTextArray[i + 1], false) + 4) % 5;
+                decryptedText.Append(matrix[row, col]);
+            }
+            else
+            {
+                int row1 = getCurpos(matrix, cipherTextArray[i], true);
+                int col1 = getCurpos(matrix, cipherTextArray[i], false);
+                int row2 = getCurpos(matrix, cipherTextArray[i + 1], true) % 5;
+                int col2 = getCurpos(matrix, cipherTextArray[i + 1], false) % 5;
+                decryptedText.Append(matrix[row1, col2]);
+                decryptedText.Append(matrix[row2, col1]);
+            }
+            i = i + 2;
+        }
+
+
+        return decryptedText.ToString();
     }
     public static char[] PlainTextToArray(string planText)
     {
