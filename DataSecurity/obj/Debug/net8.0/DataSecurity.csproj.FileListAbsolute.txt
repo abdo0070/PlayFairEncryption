@@ -1,0 +1,14 @@
+C:\Users\Abdalla\source\repos\DataSecurity\DataSecurity\obj\Debug\net8.0\DataSecurity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Abdalla\source\repos\DataSecurity\DataSecurity\obj\Debug\net8.0\DataSecurity.AssemblyInfoInputs.cache
+C:\Users\Abdalla\source\repos\DataSecurity\DataSecurity\obj\Debug\net8.0\DataSecurity.AssemblyInfo.cs
+C:\Users\Abdalla\source\repos\DataSecurity\DataSecurity\obj\Debug\net8.0\DataSecurity.csproj.CoreCompileInputs.cache
+C:\Users\Abdalla\source\repos\DataSecurity\DataSecurity\bin\Debug\net8.0\DataSecurity.exe
+C:\Users\Abdalla\source\repos\DataSecurity\DataSecurity\bin\Debug\net8.0\DataSecurity.deps.json
+C:\Users\Abdalla\source\repos\DataSecurity\DataSecurity\bin\Debug\net8.0\DataSecurity.runtimeconfig.json
+C:\Users\Abdalla\source\repos\DataSecurity\DataSecurity\bin\Debug\net8.0\DataSecurity.dll
+C:\Users\Abdalla\source\repos\DataSecurity\DataSecurity\bin\Debug\net8.0\DataSecurity.pdb
+C:\Users\Abdalla\source\repos\DataSecurity\DataSecurity\obj\Debug\net8.0\DataSecurity.dll
+C:\Users\Abdalla\source\repos\DataSecurity\DataSecurity\obj\Debug\net8.0\refint\DataSecurity.dll
+C:\Users\Abdalla\source\repos\DataSecurity\DataSecurity\obj\Debug\net8.0\DataSecurity.pdb
+C:\Users\Abdalla\source\repos\DataSecurity\DataSecurity\obj\Debug\net8.0\DataSecurity.genruntimeconfig.cache
+C:\Users\Abdalla\source\repos\DataSecurity\DataSecurity\obj\Debug\net8.0\ref\DataSecurity.dll
